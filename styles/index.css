@@ -14,13 +14,20 @@ body {
 .main-logo {
   font-family: "Montez", cursive;
   color: blue;
-  font-size: 45px;
+  font-size: 35px;
   margin: 0px;
 }
 
 .subtitle {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 13px;
-    font-weight: 600;
-    margin: 0px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
 }
