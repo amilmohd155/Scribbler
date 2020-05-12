@@ -1,8 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-nav {
@@ -26,8 +35,24 @@ body {
 }
 
 .actions button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    font-size: 15px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+}
+
+.main_div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_div button {
+  padding: 10px 20px;
+  background-color: #cfb53b;
+  color: black;
+  font-size: 15px;
+  margin: 5px;
 }
