@@ -1,12 +1,26 @@
-body{
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
-.top-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.main-logo {
+  font-family: "Montez", cursive;
+  color: blue;
+  font-size: 45px;
+  margin: 0px;
+}
+
+.subtitle {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px;
 }
