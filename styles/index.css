@@ -78,7 +78,7 @@ body {
   margin: auto;
   padding: 5px 20px;
   border: 1px solid #888;
-  width: fit-content;
+  width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -92,5 +92,32 @@ body {
 }
 
 .modal-body {
-  padding: 2px 16px;
+  
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body label {
+  padding: 20px 0px 5px 0px;
+  font-size: 15px;
+}
+
+.modal-body input {
+  border: none;
+  background-color: #eeeeee;
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+}
+
+
+.modal-body button {
+  color: white;
+  background-color: green;
+  border: none;
+  margin: 20px 0px;
+  padding: 10px;
 }

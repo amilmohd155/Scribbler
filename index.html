@@ -24,7 +24,7 @@
       <!-- Actions -->
       <div class="actions">
         <button id="signupBtn">Sign Up</button>
-        <button>Sign In</button>
+        <button id="signinBtn">Sign In</button>
       </div>
     </div>
     <div class="main-div">
@@ -32,6 +32,31 @@
       <button>Create Post</button>
     </div>
     <div class="modal" id="signupModel">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Get Started</p>
+          <i class="fas fa-times" id="close"></i>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your name" name="email" required>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter your username" name="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password" name="psw" required>
+        
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
+        
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="signinModel">
       <div class="modal-content">
         <div class="modal-header">
           <p>Get Started</p>
