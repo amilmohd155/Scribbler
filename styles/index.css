@@ -6,6 +6,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 body {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
@@ -91,8 +95,12 @@ body {
   border-bottom: solid #e0e0e0;
 }
 
+.close:hover {
+  cursor: pointer;
+}
+
 .modal-body {
-  
+  padding-bottom: 20px;
 }
 
 .modal-body form {
@@ -113,11 +121,22 @@ body {
   font-weight: 600;
 }
 
-
 .modal-body button {
   color: white;
   background-color: green;
   border: none;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
   padding: 10px;
+}
+
+
+.modal-body span {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.modal-body span p {
+  display: inline;
+  color: blue;
 }

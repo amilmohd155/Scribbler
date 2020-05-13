@@ -1,26 +1,41 @@
-var modal = document.getElementById("signupModel");
+var signupmodal = document.getElementById("signupModel");
 
-// Get the button that opens the modal
-var btn = document.getElementById("signupBtn");
+var signupbtn = document.getElementById("signupBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementById("close")
+var signupClose = document.getElementById("signupClose");
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-  console.log('clicked');
-  
-}
+var signinmodal = document.getElementById("signinModal");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+var signinbtn = document.getElementById("signinBtn");
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+var signinClose = document.getElementById("signinClose");
+
+signupbtn.onclick = function () {
+  signupmodal.style.display = "block";
+};
+
+signinbtn.onclick = function () {
+  signinmodal.style.display = "block";
+};
+
+signupClose.onclick = function () {
+  signupmodal.style.display = "none";
+};
+
+signinClose.onclick = function () {
+  signinmodal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == signupmodal) {
+    this.signupmodal.style.display = "none";
   }
-}
+  if (event.target == signinmodal) {
+    this.signinmodal.style.display = "none";
+  }
+};
+
+document.getElementById("signupBtnAgain").onclick = function () {
+  signinmodal.style.display = "none";
+  signupmodal.style.display = "block";
+};

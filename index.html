@@ -35,7 +35,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <p>Get Started</p>
-          <i class="fas fa-times" id="close"></i>
+          <i class="fas fa-times close" id="signupClose"></i>
         </div>
         <div class="modal-body">
           <form action="#" method="post">
@@ -56,27 +56,23 @@
         </div>
       </div>
     </div>
-    <div class="modal" id="signinModel">
+    <div class="modal" id="signinModal">
       <div class="modal-content">
         <div class="modal-header">
-          <p>Get Started</p>
-          <i class="fas fa-times" id="close"></i>
+          <p>Welcome Back!</p>
+          <i class="fas fa-times close" id="signinClose"></i>
         </div>
         <div class="modal-body">
-          <form action="#" method="post">
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter your name" name="email" required>
-
+          <form action="#" method="post"> 
             <label for="username"><b>Username</b></label>
             <input type="text" placeholder="Enter your username" name="username" required>
         
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter your password" name="psw" required>
         
-            <label for="psw-repeat"><b>Confirm Password</b></label>
-            <input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
-        
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign In</button>
+
+            <span><b>Not a member? <p id="signupBtnAgain">Sign Up</p></b></span>
           </form>
         </div>
       </div>
