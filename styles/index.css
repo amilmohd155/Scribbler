@@ -19,6 +19,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
