@@ -29,7 +29,7 @@
     </div>
     <div class="main-div">
       <button>All Posts</button>
-      <button>Create Post</button>
+      <button id="createPostBtn">Create Post</button>
     </div>
     <div class="modal" id="signupModel">
       <div class="modal-content">
@@ -73,6 +73,25 @@
             <button type="submit">Sign In</button>
 
             <span><b>Not a member? <p id="signupBtnAgain">Sign Up</p></b></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="createPostModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Pen your post</p>
+          <i class="fas fa-times close" id="createClose"></i>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post"> 
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter title of your post" name="title" required>
+        
+            <label for="content"><b>Contents</b></label>
+            <textarea rows="6" placeholder="Enter the contents of your post" name="content" required></textarea>
+        
+            <button id="create-btn" type="submit">Create</button>
           </form>
         </div>
       </div>

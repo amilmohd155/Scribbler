@@ -10,6 +10,18 @@ var signinbtn = document.getElementById("signinBtn");
 
 var signinClose = document.getElementById("signinClose");
 
+var createPostModal = document.getElementById("createPostModal");
+var createPostBtn = document.getElementById("createPostBtn");
+var createClose = document.getElementById("createClose");
+
+createPostBtn.onclick = function () {
+  createPostModal.style.display = "block";
+};
+
+createClose.onclick = function () {
+  createPostModal.style.display = "none";
+};
+
 signupbtn.onclick = function () {
   signupmodal.style.display = "block";
 };
@@ -32,6 +44,9 @@ window.onclick = function (event) {
   }
   if (event.target == signinmodal) {
     this.signinmodal.style.display = "none";
+  }
+  if (event.target == this.createPostModal) {
+    this.createPostModal.style.display = "none";
   }
 };
 

@@ -113,12 +113,13 @@ body {
   font-size: 15px;
 }
 
-.modal-body input {
+.modal-body input,
+textarea {
   border: none;
   background-color: #eeeeee;
   color: black;
   padding: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .modal-body button {
@@ -129,6 +130,10 @@ body {
   padding: 10px;
 }
 
+#create-btn {
+  width: fit-content;
+  align-self: center;
+}
 
 .modal-body span {
   text-align: center;
