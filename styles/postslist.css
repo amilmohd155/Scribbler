@@ -7,6 +7,11 @@ body {
 }
 body {
   background-color: #ffeedd;
+  font-size: 14px;
+}
+
+i {
+    color: #848484;
 }
 
 .top-nav {
@@ -46,7 +51,6 @@ body {
 }
 
 .post-card {
-  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,12 +63,30 @@ body {
 }
 
 .post-content {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   background-color: #e8e8e8;
 }
 .post-creator {
   color: #656565;
   padding: 10px;
-  font-size: 1.1em;
   font-weight: 600;
+}
+
+.post-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-title p {
+  font-weight: 600;
+  color: #9e9e9e;
+  padding: 0px;
+  margin: 0px;
+}
+
+.more-options {
+  text-align: end;
 }
