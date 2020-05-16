@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.main-logo {
+  font-family: "Montez", cursive;
+  color: blue;
+  font-size: 35px;
+  margin: 0px;
+}
+
+.subtitle {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  margin: 30px;
+}
+
+.container h3 {
+  text-align: center;
+}
+
+.action-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 6px 0px #f4433685;
+  border: none;
+}
+
+.button p {
+  margin: 0px 5px;
+}
