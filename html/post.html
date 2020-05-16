@@ -42,14 +42,23 @@
       </p>
       <div>
         <button class="button">
-          <p>Like</p>
           <i class="fas fa-thumbs-up"></i>
+          <p>Like</p>
         </button>
         <p class="num-likes"></p>
       </div>
-      <div>
-          <textarea name="Leave a comment" id="" cols="30" rows="10"></textarea>
-      </div>
+      <form class="comment-form" action="#">
+        <textarea
+          name="comment"
+          placeholder="Leave a comment"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="button" type="submit">Comment</button>
+      </form>
+      <p>All Comments</p>
+      <div class="comment-list"></div>
     </div>
   </body>
   <script src="../scripts/post.js"></script>
