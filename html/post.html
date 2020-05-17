@@ -47,22 +47,22 @@
         </p>
       </div>
       <div>
-        <button class="button">
+        <button id="like-btn" class="button">
           <i class="fas fa-thumbs-up"></i>
           <p>Like</p>
         </button>
-        <p class="num-likes"></p>
+        <p class="num-likes">Be the first one to like this!</p>
       </div>
-      <form class="comment-form" action="#">
+      <div class="comment-form" action="#">
         <textarea
           name="comment"
           placeholder="Leave a comment"
-          id=""
+          id="comment-text"
           cols="30"
           rows="10"
         ></textarea>
-        <button class="button" type="submit">Comment</button>
-      </form>
+        <button class="button" id="comment-btn" type="submit">Comment</button>
+      </div>
       <p>All Comments</p>
       <div class="comment-list"></div>
     </div>
