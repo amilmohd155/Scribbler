@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Scribbler</title>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
     <link
       href="https://fonts.googleapis.com/css?family=Montez&family=Ubuntu+Mono&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/index.css" />
-    <script src="https://kit.fontawesome.com/21761e52ce.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/21761e52ce.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <!-- Main -->
@@ -28,8 +29,9 @@
       </div>
     </div>
     <div class="main-div">
-      <button>All Posts</button>
-      <button id="createPostBtn"><a href="html/postslist.html">Create Post</a></button>
+      <a href="html/postslist.html"><button>All Posts</button></a>
+
+      <button id="createPostBtn">Create Post</button>
     </div>
     <div class="modal" id="signupModel">
       <div class="modal-content">
@@ -40,17 +42,37 @@
         <div class="modal-body">
           <form action="#" method="post">
             <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter your name" name="email" required>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="email"
+              required
+            />
 
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter your username" name="username" required>
-        
+            <input
+              type="text"
+              placeholder="Enter your username"
+              name="username"
+              required
+            />
+
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter your password" name="psw" required>
-        
+            <input
+              type="password"
+              placeholder="Enter your password"
+              name="psw"
+              required
+            />
+
             <label for="psw-repeat"><b>Confirm Password</b></label>
-            <input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
-        
+            <input
+              type="password"
+              placeholder="Re-enter your password"
+              name="psw-repeat"
+              required
+            />
+
             <button type="submit">Sign Up</button>
           </form>
         </div>
@@ -63,34 +85,59 @@
           <i class="fas fa-times close" id="signinClose"></i>
         </div>
         <div class="modal-body">
-          <form action="#" method="post"> 
+          <form action="#" method="post">
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter your username" name="username" required>
-        
+            <input
+              type="text"
+              placeholder="Enter your username"
+              name="username"
+              required
+            />
+
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter your password" name="psw" required>
-        
+            <input
+              type="password"
+              placeholder="Enter your password"
+              name="psw"
+              required
+            />
+
             <button type="submit">Sign In</button>
 
-            <span><b>Not a member? <p id="signupBtnAgain">Sign Up</p></b></span>
+            <span
+              ><b
+                >Not a member?
+                <p id="signupBtnAgain">Sign Up</p></b
+              ></span
+            >
           </form>
         </div>
       </div>
     </div>
     <div class="modal" id="createPostModal">
-      <div class="modal-content">
+      <div class="modal-content" id="cpm-modal-content">
         <div class="modal-header">
           <p>Pen your post</p>
           <i class="fas fa-times close" id="createClose"></i>
         </div>
         <div class="modal-body">
-          <form action="#" method="post"> 
+          <form action="#" method="post">
             <label for="title"><b>Title</b></label>
-            <input type="text" placeholder="Enter title of your post" name="title" required>
-        
+            <input
+              type="text"
+              placeholder="Enter title of your post"
+              name="title"
+              required
+            />
+
             <label for="content"><b>Contents</b></label>
-            <textarea rows="6" placeholder="Enter the contents of your post" name="content" required></textarea>
-        
+            <textarea
+              rows="15"
+              placeholder="Enter the contents of your post"
+              name="content"
+              required
+            ></textarea>
+
             <button id="create-btn" type="submit">Create</button>
           </form>
         </div>

@@ -148,4 +148,9 @@ textarea {
 .modal-body span p {
   display: inline;
   color: blue;
+  cursor: pointer;
+}
+
+#cpm-modal-content {
+  width: 75%;
 }

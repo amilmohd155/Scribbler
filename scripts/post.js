@@ -61,10 +61,13 @@ var commentList = document.getElementsByClassName("comment-list")[0];
 commentBtn.onclick = function () {
   var comment = commentText.value.trim();
 
-  var paraNode = document.createElement("p");
-  var textNode = document.createTextNode(comment);
-  paraNode.appendChild(textNode);
+  if(comment != '') {
+    var paraNode = document.createElement("p");
+    var textNode = document.createTextNode(comment);
+    paraNode.appendChild(textNode);
+  
+    commentList.insertBefore(paraNode, commentList.firstChild);
+    commentText.value = "";
+  }
 
-  commentList.insertBefore(paraNode, commentList.firstChild);
-  commentText.value = "";
 };
